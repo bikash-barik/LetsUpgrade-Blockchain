@@ -1,0 +1,34 @@
+Assignment-7 Day-4
+1.Check how much Gas is utilized for uint8 and uint256 for trxns.
+Sol:-For uint8
+status	0x1 Transaction mined and execution succeed
+transaction hash	0x9ae2a902887f7cf1fc0d7fd1667f199242da58cefde679ad5535d56d5db1aafe 
+contract address	0xf8e81d47203a594245e36c48e151709f0c19fbe8 
+from	0x5b38da6a701c568545dcfcb03fcb875f56beddc4 
+to	setValue_getValue.(constructor) 
+gas	3000000 gas 
+transaction cost	118439 gas 
+execution cost	48099 gas 
+hash	0x9ae2a902887f7cf1fc0d7fd1667f199242da58cefde679ad5535d56d5db1aafe 
+input	0x608...60033 
+decoded input	{} 
+decoded output	- 
+logs	[] 
+value	0 wei 
+
+For uint265
+status	0x1 Transaction mined and execution succeed
+transaction hash	0x65d8b2c01275e16070c01fa903a0d9e588f74505ac1df571fc8f7c61cf2b8685 
+contract address	0xd9145cce52d386f254917e481eb44e9943f39138 
+from	0x5b38da6a701c568545dcfcb03fcb875f56beddc4 
+to	setValue_getValue.(constructor) 
+gas	3000000 gas 
+transaction cost	107573 gas 
+execution cost	39893 gas 
+hash	0x65d8b2c01275e16070c01fa903a0d9e588f74505ac1df571fc8f7c61cf2b8685 
+input	0x608...60033 
+decoded input	{} 
+decoded output	- 
+logs	[] 
+value	0 wei 
+
