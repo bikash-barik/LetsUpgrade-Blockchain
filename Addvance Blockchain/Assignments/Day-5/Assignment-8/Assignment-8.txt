@@ -1,0 +1,39 @@
+Working With Errors in Solidity
+Errors can occur due to syntax issues, logical issues, transactional reasons or the user can prompt for error if required.
+Like any other programming Language you can handle errors with try/catch block even in solidity.
+•	Throw
+•	Require
+•	Assert
+•	Revert
+Throw
+•	The user can use “Throw” keyword to cause an error if required.
+•	It does not return any Ether spent but rollbacks changes to the data alone
+Disadvantages
+•	All gas is consumed, everything reverted
+•	Impossible to tell users why the call failed
+•	Errors cannot be caught, so they cannot be handled gracefully
+Require
+•	Used to check pre-requisite conditions and throw an exception if the condition is not satisfied
+•	Used to ensure valid conditions that cannot be detected until execution time
+•	This includes conditions on inputs or return values from calls to external contracts.
+•	When a require condition fails, solidity internally performs a “revert” operation
+•	Uses the 0xfd opcode to cause an error condition
+ 
+ 
+Syntax : require(condition, error message)
+ 
+Assert
+•	It is similar to “require” operation
+•	Used to check pre-requisite conditions and throw an exception if the condition is not satisfied
+•	User should apply assert only for internal errors or for analyzing invariants.
+•	Properly functioning code should never reach a failing assert statement
+•	It does not return any gas consumed
+Syntax : assert(condition, error message)
+ 
+Revert
+•	Another way to trigger exceptions from within other code blocks to flag an error and revert the current call.
+•	It takes an optional string message containing details about the error that is passed back to the caller
+ 
+Syntax : 
+condition
+revert(error message)
