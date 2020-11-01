@@ -1,0 +1,8 @@
+Assignment -4 Self based
+1.Insert your own data in the Distributed Blockchain .
+
+Sol:-
+When we put many data in a block it taking more time to mine the block then other block
+ 
+ 
+ 
