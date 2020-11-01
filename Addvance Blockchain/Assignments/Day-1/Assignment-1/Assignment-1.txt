@@ -1,0 +1,28 @@
+Assignment-1 
+1.	Read the White Paper which Satoshi Nakamoto Had Published.
+
+Sol:-
+Intoduction
+
+Bitcoin creator, Satoshi Nakomoto discusses the web's reliance on trusted third parties such as banks and credit card companies to process electronic payments. The traditional method may work for most transactions but problems do occur when financial institutions facilitate the buying and selling of goods on the internet. Here are some of the weaknesses of traditional electronic payments involving third parties:
+
+
+Transactions
+In this section, Nakamoto's description of the electronic transaction process, namely the blockchain, gets technical. In simple terms, he defines an electronic "coin" as a chain of digital signatures. Owners digitally sign a hash of the previous transaction and add a public key of the next owner to the end of the coin. A recipient of the coin, a payee, can verify the signatures in order to verify the chain of ownership.
+
+Timestamp Server
+A timestamp server takes a hash of a block of items and publicly announces the hash. The timestamp proves the existence of the data at the time. Each timestamp includes the previous timestamp in its hash. And each additional timestamp reinforces the ones before it. This sequence forms a chain.
+NETWORK
+Nodes always consider the longest chain to be the correct one and will keep working on extending it. If two nodes broadcast different versions of the next block simultaneously, some nodes may receive one or the other first. In that case, they work on the first one they received, but save the other branch in case it becomes longer. The tie will be broken when the next proofof-work is found and one branch becomes longer;
+
+Incentive
+By convention, the first transaction in a block is a special transaction that starts a new coin owned by the creator of the block. This adds an incentive for nodes to support the network, and provides a way to initially distribute coins into circulation, since there is no central authority to issue them. The steady addition of a constant of amount of new coins is analogous to gold miners expending resources to add gold to circulation. In our case, it is CPU time and electricity that is expended. The incentive can also be funded with transaction fees. If the output value of a transaction is less than its input value, the difference is a transaction fee that is added to the incentive value of the block containing the transaction.
+Combining and Splitting Value
+Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender. 
+
+Privacy
+The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone.
+
+Conclusion 
+We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to record a public history of transactions that quickly becomes computationally impractical for an attacker to change if honest nodes control a majority of CPU power. The network is robust in its unstructured simplicity. Nodes work all at once with little coordination. They do not need to be identified, since messages are not routed to any particular place and only need to be delivered on a best effort basis. Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone. They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them. Any needed rules and incentives can be enforced with this consensus mechanism.
+
