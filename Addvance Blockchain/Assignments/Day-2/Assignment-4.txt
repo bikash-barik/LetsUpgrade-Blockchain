@@ -1,0 +1,6 @@
+Assinment-4 Day-2
+1. Test mining for 10 Zero and submit the Python Notebook file for grading and check how much time does it takes 
+Sol:-
+ Nounce:18356425
+Time Taken - 7 hours 47 minutes
+
